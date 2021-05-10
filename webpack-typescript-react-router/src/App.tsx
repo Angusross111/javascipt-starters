@@ -1,13 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
-import RoutePaths from "./Routes";
+import { useRoutes,} from "react-router-dom";
+import routes from "./Routes";
+
 
 function App() {
-  return (
-   <Router>
-     <RoutePaths />
-   </Router>
-  );
+  let routing = useRoutes(routes);
+  return routing
 }
-
 export default App
