@@ -101,7 +101,7 @@ function ProtectedRoute({ children }: any) {
         <Navigate to="/login" state={{ from: location }} />
     );
 }
-export function PublicRoute({ children }: any) {
+function PublicRoute({ children }: any) {
     console.log("Public");
     let { login } = useAuthState();
     let location = useLocation();
