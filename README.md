@@ -30,6 +30,5 @@ npm install react react-dom typescript webpack webpack-cli webpack-merge ts-load
 ```
 ## material ui
 ```
-npm install @material-ui/core
-npm install @material-ui/icons
+npm install @material-ui/core @material-ui/icons
 ```
