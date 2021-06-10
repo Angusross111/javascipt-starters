@@ -28,3 +28,8 @@ A whole bunch of different javascript site starters
 ```
 npm install react react-dom typescript webpack webpack-cli webpack-merge ts-loader html-webpack-plugin file-loader clean-webpack-plugin @types/node @types/react @types/react-dom @types/jest --save-dev
 ```
+## material ui
+```
+npm install @material-ui/core
+npm install @material-ui/icons
+```
