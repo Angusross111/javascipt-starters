@@ -3,6 +3,15 @@ import { Navigate, Link, Routes, Route } from "react-router-dom";
 
 // import Dashboard from "../pages/Dashboard";
 import Login from "../pages/Login";
+function Layout() {
+    return (
+        <Routes>
+            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="monitoring" element={<Page2 />} />
+        </Routes>
+    );
+}
+
 function Dashboard() {
     return <h1>Dashboard</h1>;
 }
@@ -30,8 +39,8 @@ const AuthRoutes = () => {
                 <Navigate to="/login" />
             </Route>
             <PublicRoute path="/login" element={<Login />} />
-            <PrivateRoute path="/dashboard" element={<Dashboard />} />
-            <PrivateRoute path="/page2" element={<Page2 />} />
+            <PrivateRoute path="/app/*" element={<Layout />} />
+            {/* <PrivateRoute path="/page2" element={<Page2 />} /> */}
             <Route path="*" element={<PageNotFound />} />
         </Routes>
     );

@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "A starter project for using React, TypeScript, and Webpack",
     "scripts": {
+        "start": "webpack serve --open --host 127.0.0.2 --mode development --config ./webpack.config.development.js",
         "dev": "webpack serve --mode development --progress --hot --config ./webpack.config.development.js",
         "build": "webpack --mode production --config ./webpack.config.production.js"
     },

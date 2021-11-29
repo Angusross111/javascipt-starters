@@ -4,7 +4,7 @@
     "description": "Another JS starter that will be deprecated in 3 months",
     "main": "index.tsx",
     "scripts": {
-        "start": "webpack serve --open --host 127.0.0.2 --config config/webpack.config.dev.js",
+        "start": "webpack serve --open --host 127.0.0.5 --config config/webpack.config.dev.js",
         "watch": "webpack --watch --config config/webpack.config.dev.js",
         "build-dev": "webpack --config config/webpack.config.dev.js --watch",
         "build": "webpack --config config/webpack.config.prod.js"
